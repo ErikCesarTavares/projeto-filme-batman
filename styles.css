@@ -1,0 +1,226 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Cabeçalho */
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background-color: #111;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    color: #fff;
+    font-size: 18px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    transition: color 0.3s;
+}
+
+nav ul li a {
+    color: inherit;
+}
+
+nav ul li:hover {
+    color: #d21617;
+}
+
+/* Banner */
+#banner {
+    background-image: url('data:image/jpeg;base64,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'); /* Substituir pelo caminho real */
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+}
+
+/* Container do trailer */
+#trailer-container {
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    display: flex;
+    gap: 30px;
+    align-items: flex-start;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.trailer {
+    flex: 1;
+}
+
+#sinopse {
+    flex: 1;
+    color: #fff;
+}
+
+.description {
+    font-size: 18px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #d21617;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #d21617;
+}
+
+/* Galeria de Fotos */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Rodapé */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    background-color: #111;
+}
+
+footer img {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+footer span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+/* Formulários */
+form {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222;
+    border-radius: 10px;
+}
+
+form label {
+    display: block;
+    color: #fff;
+    margin-bottom: 8px;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+}
+
+form button {
+    display: block;
+    width: 100%;
+    background-color: #d21617;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form button:hover {
+    background-color: #fff;
+    color: #d21617;
+}
+
+/* Comentários */
+#comentarios ul {
+    margin-top: 20px;
+}
+
+#comentarios li {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+#comentarios li strong {
+    font-weight: bold;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #trailer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .trailer, #sinopse {
+        width: 100%;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}

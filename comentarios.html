@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comentários</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="./logoBatman.png" alt="Logo do Batman">
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+                <li><a href="./fotos.html">Fotos</a></li>
+                <li><a href="./comentarios.html">Comentários</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Deixe seu comentário</h1>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="comentario">Comentário:</label>
+            <textarea id="comentario" name="comentario" rows="5" required></textarea>
+
+            <button type="submit" class="button">Enviar</button>
+        </form>
+
+        <section id="comentarios">
+            <h2>Comentários Recentes</h2>
+            <ul>
+                <li><strong>João:</strong> Adorei o filme, muita ação!</li>
+                <li><strong>Maria:</strong> A atuação foi incrível, especialmente do Robert Pattinson.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <img id="logo-footer" src="./logoBatman.png" alt="Logo do Batman no rodapé">
+        <span>Todos os direitos reservados &copy;</span>
+        <span>Desenvolvido por: Erik Tavares</span>
+    </footer>
+</body>
+</html>
