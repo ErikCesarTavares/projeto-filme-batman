@@ -53,6 +53,15 @@ O **Projeto Filme Batman** apresenta as seguintes funcionalidades:
 
 ---
 
+## 🌍 Acesse o Projeto
+
+Você pode acessar o projeto online clicando no link abaixo:
+
+[👉 🎥 Projeto Filme Batman](https://projeto-filme-batman.vercel.app/)
+
+
+---
+
 ## 🚀 Como Executar o Projeto
 
 1. **Clone o repositório**:  
